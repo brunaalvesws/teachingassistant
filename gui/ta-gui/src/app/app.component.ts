@@ -12,9 +12,15 @@ import { AlunoService } from './aluno.service';
 export class AppComponent {
    aluno: Aluno = {nome: "", cpf: "", email: "", github_login: ""};
    alunoService = new AlunoService();
+   alunos: Aluno[] = [];
 
    gravar(a: Aluno): void {
      this.alunoService.gravar(a);
+<<<<<<< HEAD
      this.aluno = {nome: "", cpf: "", email: "", github_login: ""};
+=======
+     this.alunos.push(a);
+     this.aluno = {nome: "", cpf: "", email: ""};
+>>>>>>> afd71eb (visualizacao da lista de alunos cadastrados)
   }
 }
