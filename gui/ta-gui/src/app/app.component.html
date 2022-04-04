@@ -34,6 +34,7 @@
    <th>Nome</th>
    <th>CPF</th>
    <th>e-mail</th>
+   <th>Login Github</th>
    <th>Requisitos</th>
    <th>Gerência de Configuração</th>
 </tr>
@@ -41,20 +42,10 @@
    <td>{{a.nome}}</td>
    <td>{{a.cpf}}</td>
    <td>{{a.email}}</td>
+   <td>{{a.github_login}}</td>
    <td><input [(ngModel)]="a.metas['requisitos']" (change)="atualizarAluno(a)"></td>
    <td><input [(ngModel)]="a.metas['gerDeConfiguracao']" (change)="atualizarAluno(a)"></td>
 </tr>
 </table>
 
-<<<<<<< HEAD
-<ul class="alunos">
-<li *ngFor="let a of alunos">
-    <span>{{a.nome}}</span>,
-    <span>{{a.cpf}}</span>,
-    <span>{{a.email}}</span>,
-    <span>{{a.github_login}}</span>
-</li>
-</ul>
-=======
->>>>>>> 8e6a639 (cadastro de metas, e clonagem de objetos para simular funcionamento do servidor)
 </html>
